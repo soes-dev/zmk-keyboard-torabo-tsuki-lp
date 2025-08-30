@@ -24,11 +24,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans            &trans            &trans            &trans            &trans                                   &trans            &trans          &trans            &trans             &trans     &trans
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                               &kp RS(NUMBER_6)  &kp RS(N7)      &kp RS(N8)        &kp RS(N9)         &kp EQUAL  &trans
-&trans  &kp HOME          &kp PAGE_UP       &kp PAGE_DOWN     &kp PAGE_DOWN     &kp AT_SIGN              &trans  &trans  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW    &kp STAR   &trans
-&trans  &kp PRINTSCREEN   &trans            &kp INT_HENKAN    &kp INT_MUHENKAN  &kp LANG_ZENKAKUHANKAKU  &trans  &trans  &kp CARET         &kp INT_YEN     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans
-&trans  &trans            &trans            &trans            &trans            &mo 3                    &trans  &trans  &trans            &trans          &trans            &trans             &trans     &trans
+&trans  &trans            &trans            &trans            &trans            &trans                                   &trans            &trans          &trans          &trans           &trans          &trans
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                               &kp RS(NUMBER_6)  &kp RS(N7)      &kp RS(N8)      &kp RS(N9)       &kp EQUAL       &trans
+&trans  &kp HOME          &kp PAGE_UP       &kp PAGE_DOWN     &kp END           &kp AT_SIGN              &trans  &trans  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp ASTRK       &trans
+&trans  &trans            &trans            &kp INT_HENKAN    &kp INT_MUHENKAN  &kp LANG_ZENKAKUHANKAKU  &trans  &trans  &kp CARET         &kp INT_YEN     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UNDERSCORE  &trans
+&trans  &trans            &trans            &trans            &trans            &mo 3                    &trans  &trans  &trans            &trans          &trans          &trans           &trans          &trans
             >;
 
             label = "symbol_move";
@@ -38,7 +38,7 @@
             bindings = <
 &trans  &trans        &trans        &trans    &trans    &trans                  &trans  &trans     &trans   &trans     &trans     &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp N3    &kp N4    &kp N5                  &kp N6  &kp N7     &kp N8   &kp N9     &kp N0     &trans
-&trans  &trans        &trans        &mkp MB5  &mkp MB4  &trans  &trans  &trans  &trans  &mkp LCLK  &trans   &mkp RCLK  &mkp MCLK  &trans
+&trans  &trans        &trans        &mkp MB5  &mkp MB4  &trans  &trans  &trans  &trans  &mkp LCLK  &none    &mkp RCLK  &mkp MCLK  &trans
 &trans  &kp F1        &kp F2        &kp F3    &kp F4    &kp F5  &kp F6  &kp F7  &kp F8  &kp F9     &kp F10  &kp F11    &kp F12    &trans
 &trans  &trans        &trans        &trans    &trans    &trans  &trans  &trans  &mo 3   &trans     &trans   &trans     &trans     &trans
             >;
