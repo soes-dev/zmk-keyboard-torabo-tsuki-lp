@@ -25,6 +25,8 @@
 &none  &kp Z      &kp X     &kp C     &kp V     &kp B  &kp TAB               &kp ESCAPE        &kp N  &kp M  &kp COMMA  &kp DOT   &kp SLASH  &none
 &none  &kp LCTRL  &kp LGUI  &kp LALT  &kp BSPC  &mo 2  &mt LEFT_SHIFT SPACE  &mt RSHIFT ENTER  &mo 1  &none  &none      &kp RGUI  &kp RCTRL  &none
             >;
+
+            label = "base";
         };
 
         layer_1 {
