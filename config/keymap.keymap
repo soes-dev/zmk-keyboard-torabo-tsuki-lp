@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -30,12 +29,14 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans            &trans            &trans            &trans            &trans                                   &trans            &trans          &trans            &trans             &trans     &trans
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                               &kp RS(NUMBER_6)  &kp RS(N7)      &kp RS(N8)        &kp RS(N9)         &kp EQUAL  &trans
+&trans  &kp HOME          &kp PAGE_UP       &kp PAGE_DOWN     &kp PAGE_DOWN     &kp AT_SIGN              &trans  &trans  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW    &trans     &trans
+&trans  &kp PRINTSCREEN   &trans            &kp INT_HENKAN    &kp INT_MUHENKAN  &kp LANG_ZENKAKUHANKAKU  &trans  &trans  &kp CARET         &kp INT_YEN     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans
+&trans  &trans            &trans            &trans            &trans            &trans                   &trans  &trans  &trans            &trans          &trans            &trans             &trans     &trans
             >;
+
+            label = "symbol_move";
         };
 
         layer_2 {
