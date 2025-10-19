@@ -10,7 +10,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+        base_layer {
             bindings = <
 &trans  &trans     &trans    &trans    &trans    &trans                                          &trans  &trans  &trans     &trans    &trans     &trans
 &trans  &kp Q      &kp W     &kp E     &kp R     &kp T                                           &kp Y   &kp U   &kp I      &kp O     &kp P      &trans
@@ -22,7 +22,7 @@
             label = "base";
         };
 
-        layer_1 {
+        symbol_move_layer {
             bindings = <
 &trans  &trans            &trans            &trans            &trans            &trans                                   &trans            &trans          &trans          &trans           &trans          &trans
 &trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                               &kp RS(NUMBER_6)  &kp RS(N7)      &kp RS(N8)      &kp RS(N9)       &kp EQUAL       &trans
@@ -34,11 +34,11 @@
             label = "symbol_move";
         };
 
-        layer_2 {
+        nfm_layer {
             bindings = <
 &trans  &trans        &trans        &trans    &trans    &trans                  &trans  &trans     &trans   &trans     &trans     &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp N3    &kp N4    &kp N5                  &kp N6  &kp N7     &kp N8   &kp N9     &kp N0     &trans
-&trans  &trans        &trans        &mkp MB5  &mkp MB4  &trans  &trans  &trans  &trans  &mkp LCLK  &none    &mkp RCLK  &mkp MCLK  &trans
+&trans  &trans        &mo 4         &mkp MB5  &mkp MB4  &trans  &trans  &trans  &trans  &mkp LCLK  &none    &mkp RCLK  &mkp MCLK  &trans
 &trans  &kp F1        &kp F2        &kp F3    &kp F4    &kp F5  &kp F6  &kp F7  &kp F8  &kp F9     &kp F10  &kp F11    &kp F12    &trans
 &trans  &trans        &trans        &trans    &trans    &trans  &trans  &trans  &mo 3   &trans     &trans   &trans     &trans     &trans
             >;
@@ -46,7 +46,7 @@
             label = "num_fnc_mouse";
         };
 
-        layer_3 {
+        system_layer {
             bindings = <
 &trans  &trans        &trans        &trans        &trans        &trans                        &trans            &trans     &trans         &trans     &trans      &trans
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &kp HOME          &kp PG_UP  &kp PAGE_DOWN  &kp END    &kp ESCAPE  &trans
@@ -56,6 +56,18 @@
             >;
 
             label = "system";
+        };
+
+        scroll_layer {
+            bindings = <
+&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+            >;
+
+            label = "for scroll";
         };
     };
 };
