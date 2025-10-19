@@ -24,11 +24,11 @@
 
         symbol_move_layer {
             bindings = <
-&trans  &trans      &trans       &trans         &trans      &trans                     &trans          &trans          &trans          &trans           &trans     &trans
-&trans  &kp LS(N1)  &kp LS(N2)   &kp LS(N3)     &kp LS(N4)  &kp LS(N5)                 &kp RS(N6)      &kp RS(N7)      &kp RS(N8)      &kp RS(N9)       &kp MINUS  &trans
-&trans  &kp HOME    &kp PAGE_UP  &kp PAGE_DOWN  &kp END     &kp LBKT   &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp SQT    &trans
-&trans  &trans      &trans       &kp INT4       &kp INT5    &kp GRAVE  &trans  &trans  &kp EQUAL       &kp INT3        &kp RBKT        &kp NUHS         &kp INT1   &trans
-&trans  &trans      &trans       &trans         &trans      &mo 3      &trans  &trans  &trans          &trans          &trans          &trans           &trans     &trans
+&trans  &trans      &trans       &trans         &trans      &trans                      &trans          &trans          &trans        &trans           &trans     &trans
+&trans  &kp LS(N1)  &kp LS(N2)   &kp LS(N3)     &kp LS(N4)  &kp LS(N5)                  &kp RS(N6)      &kp RS(N7)      &kp RS(N8)    &kp RS(N9)       &kp MINUS  &trans
+&trans  &kp HOME    &kp PAGE_UP  &kp PAGE_DOWN  &kp END     &kp LBKT    &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp SQT    &trans
+&trans  &trans      &trans       &kp INT4       &kp INT5    &kp GRAVE   &trans  &trans  &kp EQUAL       &kp INT3        &kp RBKT      &kp NUHS         &kp INT1   &trans
+&trans  &trans      &trans       &trans         &kp DEL     &mo 3       &trans  &trans  &trans          &trans          &trans        &trans           &trans     &trans
             >;
 
             label = "symbol_move";
@@ -48,11 +48,11 @@
 
         system_layer {
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans                        &trans            &trans     &trans         &trans     &trans      &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &kp HOME          &kp PG_UP  &kp PAGE_DOWN  &kp END    &kp ESCAPE  &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans            &trans     &trans         &trans     &trans      &trans
-&trans  &kp F11       &kp F12       &out OUT_USB  &out OUT_BLE  &bt BT_NXT    &trans  &trans  &kp SINGLE_QUOTE  &kp DQT    &kp GRAVE      &kp TILDE  &kp PIPE    &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans            &trans     &trans         &trans     &trans      &trans
+&trans  &trans        &trans        &trans        &trans        &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F11       &kp F12       &out OUT_USB  &out OUT_BLE  &bt BT_NXT    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "system";
